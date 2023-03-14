@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <h2>Language Translator</h2><br>
+        <textarea id="txt" cols="30" rows="3" class="form-control" maxlength="500" placeholder="Enter your text"></textarea><br><br>
+        <button onclick="hindi()" class="btn btn-primary" style="margin-right: 3vw;">Hindi</button>
+        <button type="button" onclick="german()" class="btn btn-primary" style="margin-right: 3vw;">German</button>
+        <button type="button" onclick="french()"class="btn btn-primary" style="margin-right: 3vw;">French</button><br><br>
+        <button type="button" onclick="spanish()" class="btn btn-primary" style="margin-right: 3vw;">Spanish</button>
+        <button type="button" onclick="chinese()" class="btn btn-primary" style="margin-right: 3vw;">Chinese</button>
+        <button type="button" onclick="italian()" class="btn btn-primary" style="margin-right: 3vw;">Italian</button>
+        <br><br><br></div>
+        <h3><div id="result" class="container form-control"></div></h3>
+    
+    <script src="index.js"></script>
+    <script>
+        document.getElementById("result").style.visibility = "hidden";
+    </script>
+</body>
+</html>
